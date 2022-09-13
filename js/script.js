@@ -23,10 +23,10 @@ const init = {
         new WOW().init();
     },
 
-    /** убираем fixed фон для Safari */
+    /** убираем fixed фон для телефонов/планшетов */
     isSafari() {
-        const Safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
+        const SafariBrowser = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+        const mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
         const aboutUs = document.querySelector('.about-us');
         const features = document.querySelector('.features');
         const twitter = document.querySelector('.twitter');
@@ -36,7 +36,7 @@ const init = {
         const notFixedTwitter = 'url("../img/twitter-bg.png") no-repeat top center scroll';
         const notFixedContactUs = 'url("../img/contact-bg.png") no-repeat top center scroll';
 
-        if (Safari) {
+        if (SafariBrowser || mobile) {
             aboutUs.style.background = notFixedAboutUs;
             features.style.background = notFixedFeatures;
             twitter.style.background = notFixedTwitter;
