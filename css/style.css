@@ -238,16 +238,53 @@ header .active {
     font-size: 18px;
 }
 
+.gallery__block {
+    overflow: hidden;
+}
+
 picture {
     z-index: -1;
 }
 
+.gallery img {
+    transition: all 0.8s ease;
+    cursor: pointer;
+}
+
 .gallery__content {
-    top: 40%;
-    left: 25%;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 9999;
+    opacity: 0;
+    transition: all 0.8s ease;
+    transform: translateY(-80%);
+    pointer-events: none;
+}
+
+.gallery .wow:hover .gallery__content {
+    transform: translateY(-100%);
+    opacity: 1;
+    transition: all 0.8s ease;
+    pointer-events: none;
+}
+
+.gallery .wow:hover img {
+    transform: scale(1.4) rotate(-15deg);
+    transition: all 0.8s ease;
+}
+
+.zoomed-image {
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
 }
 
 /**Team*/
+
+.team {
+    padding-top: 0px !important;
+}
 
 .card__icon a {
     background-color: #d9d9d9;
@@ -685,6 +722,10 @@ textarea {
     .hello__title {
         font-size: 40px;
     }
+
+    .zoomed-image {
+        height: 300px;
+    }
 }
 
 @media (max-width:395px) {
@@ -695,5 +736,22 @@ textarea {
     .carousel-repeat a {
         width: 320px;
         height: 50px;
+    }
+
+    .blog .carousel-control-prev,
+    .blog .carousel-control-next {
+        top: 70px;
+    }
+
+}
+
+@media (max-width: 367px) {
+    .blog .row {
+        --bs-gutter-x: 0rem;
+        --bs-gutter-y: 0rem;
+    }
+
+    .carousel-repeat a {
+        width: 300px;
     }
 }

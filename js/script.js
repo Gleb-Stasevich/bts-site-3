@@ -1,14 +1,14 @@
-/** Init WOW */
 
 const carouselBody = document.querySelector('.carousel-inner');
-const nextSlide = document.querySelector('.carousel-control-next');
-const prevSlide = document.querySelector('.carousel-control-prev');
+const nextSlide = document.querySelectorAll('.carousel-control-next');
+const prevSlide = document.querySelectorAll('.carousel-control-prev');
 const slides = carouselBody.querySelectorAll('.carousel-item');
 
 const changeTheSlide = {
-    0: nextSlide,
-    1: prevSlide
+    0: nextSlide[0],
+    1: prevSlide[0]
 };
+
 
 const init = {
 
@@ -16,9 +16,9 @@ const init = {
         this.animations();
         this.isSafari();
         this.carouselFlash();
+        this.gallery();
     },
 
-    /** Init WOW */
     animations() {
         new WOW().init();
     },
@@ -42,6 +42,12 @@ const init = {
             twitter.style.background = notFixedTwitter;
             contactUs.style.background = notFixedContactUs;
 
+            for (let next in nextSlide) {
+                for (let prev in prevSlide) {
+                    nextSlide[next].style.display = 'none';
+                    prevSlide[prev].style.display = 'none';
+                }
+            }
         }
     },
 
@@ -55,6 +61,17 @@ const init = {
             }
         }
     },
+
+    gallery() {
+        const images = document.querySelectorAll('.small-preview');
+        const zoomedImage = document.querySelector('.zoomed-image');
+        zoomedImage.style.backgroundImage = 'url(' + images[0].src + ')';
+        for (let key in images) {
+            images[key].onclick = function () {
+                zoomedImage.style.backgroundImage = 'url(' + images[key].src + ')';
+            }
+        }
+    }
 };
 
 window.onload = init.preparation();

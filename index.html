@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/iconfonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico">
-    <script src="js/wow.min.js"></script>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navId" tabindex="0">
@@ -96,7 +95,7 @@
                                 </button>
                                 <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end"
                                     id="navbarSupportedContent">
-                                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0 mt-3 mt-lg-auto">
                                         <li class="nav-item">
                                             <a class="nav-link home text-white d-block text-uppercase active"
                                                 aria-current="page" href="#home">HOME</a>
@@ -317,15 +316,16 @@
                         </p>
                     </div>
                 </div>
-                <div class="row pt-5 g-5 m-auto">
+                <div class="row pt-5 g-5 m-auto" id="my-gallery">
                     <div class="col-xl-3 col-md-6 col-sm-12 wow fadeInRight" data-wow-duration="1000ms"
                         data-wow-delay="100ms">
                         <div class="gallery__block text-white w-100 text-center position-relative">
                             <picture>
                                 <source srcset="img/gallery-1.webp" type="image/webp" class="w-100 h-100">
-                                <img src="img/gallery-1.png" alt="" class="w-100 h-100">
+                                <img src="img/gallery-1.png" alt="" class="small-preview w-100 h-100">
                             </picture>
-                            <div class="gallery__content position-absolute">
+                            <div
+                                class="gallery__content position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center">
                                 <h3 class="text-white">Time Hours</h3>
                                 <p class="text-white">Design, Photography</p>
                             </div>
@@ -336,9 +336,10 @@
                         <div class="gallery__block text-white w-100 text-center position-relative">
                             <picture>
                                 <source srcset="img/gallery-2.webp" type="image/webp" class="w-100 h-100">
-                                <img src="img/gallery-2.png" alt="" class="w-100 h-100">
+                                <img src="img/gallery-2.png" alt="" class="small-preview w-100 h-100">
                             </picture>
-                            <div class="gallery__content position-absolute">
+                            <div
+                                class="gallery__content position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center">
                                 <h3 class="text-white">Time Hours</h3>
                                 <p class="text-white">Design, Photography</p>
                             </div>
@@ -349,9 +350,10 @@
                         <div class="gallery__block text-white w-100 text-center position-relative">
                             <picture>
                                 <source srcset="img/gallery-3.webp" type="image/webp" class="w-100 h-100">
-                                <img src="img/gallery-3.png" alt="" class="w-100 h-100">
+                                <img src="img/gallery-3.png" alt="" class="small-preview w-100 h-100">
                             </picture>
-                            <div class="gallery__content position-absolute">
+                            <div
+                                class="gallery__content position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center">
                                 <h3 class="text-white">Time Hours</h3>
                                 <p class="text-white">Design, Photography</p>
                             </div>
@@ -362,14 +364,16 @@
                         <div class="gallery__block text-white w-100 text-center position-relative">
                             <picture>
                                 <source srcset="img/gallery-4.webp" type="image/webp" class="w-100 h-100">
-                                <img src="img/gallery-4.png" alt="" class="w-100 h-100">
+                                <img src="img/gallery-4.png" alt="" class="small-preview w-100 h-100">
                             </picture>
-                            <div class="gallery__content position-absolute">
+                            <div
+                                class="gallery__content position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center">
                                 <h3 class="text-white">Time Hours</h3>
                                 <p class="text-white">Design, Photography</p>
                             </div>
                         </div>
                     </div>
+                    <div class="zoomed-image m-auto mt-5"></div>
                 </div>
             </div>
         </section>
@@ -1251,6 +1255,8 @@
         </div>
     </footer>
 
+
+    <script src="js/wow.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
