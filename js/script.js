@@ -14,7 +14,7 @@ const init = {
 
     preparation() {
         this.animations();
-        this.isSafari();
+        this.checkDevice();
         this.carouselFlash();
         this.gallery();
     },
@@ -24,7 +24,7 @@ const init = {
     },
 
     /** убираем fixed фон для телефонов/планшетов */
-    isSafari() {
+    checkDevice() {
         const SafariBrowser = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
         const mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
         const aboutUs = document.querySelector('.about-us');
