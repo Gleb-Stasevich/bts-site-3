@@ -3,12 +3,12 @@ const carouselBody = document.querySelector('.carousel-inner');
 const nextSlide = document.querySelectorAll('.carousel-control-next');
 const prevSlide = document.querySelectorAll('.carousel-control-prev');
 const slides = carouselBody.querySelectorAll('.carousel-item');
+console.log(nextSlide);
 
 const changeTheSlide = {
     0: nextSlide[0],
     1: prevSlide[0]
 };
-
 
 const init = {
 
@@ -27,12 +27,29 @@ const init = {
     checkDevice() {
         const mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
         if (mobile) {
-            const aboutUs = document.querySelector('.about-us');
-            aboutUs.style.cssText = `background: #45484d;
+            const gradient = `background: #45484d;
             background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
             background: -webkit-linear-gradient(top, #45484d 0%, #000000 100%);
             background: linear-gradient(to bottom, #45484d 0%, #000000 100%);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#45484d', endColorstr='#000000', GradientType=0);`
+
+            const aboutUs = document.querySelector('.about-us');
+            const features = document.querySelector('.features');
+            const twitter = document.querySelector('.twitter');
+            const contactUs = document.querySelector('.contact-us');
+
+            aboutUs.style.cssText = gradient;
+            features.style.cssText = gradient;
+            twitter.style.cssText = gradient;
+            contactUs.style.cssText = gradient;
+
+            for (let next of nextSlide) {
+                for (let prev of prevSlide) {
+                    next.style.display = 'none';
+                    prev.style.display = 'none';
+                }
+            }
+
         }
     },
 
@@ -58,8 +75,11 @@ const init = {
         }
     }
 };
-
 window.onload = init.preparation();
+
+
+
+
 
 
 
