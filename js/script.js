@@ -37,11 +37,12 @@ const init = {
             const features = document.querySelector('.features');
             const twitter = document.querySelector('.twitter');
             const contactUs = document.querySelector('.contact-us');
-
-            aboutUs.style.background = 'background: url(\'../img/about-bg.png\')';
+            const mobilePicture = document.querySelector('.mobile-picture');
+            aboutUs.style.background = '';
+            mobilePicture.style.display = '';
             features.style.cssText = gradient;
             twitter.style.cssText = gradient;
-            contactUs.style.background = 'background: url(\'../img/contact-bg.png\')';
+            contactUs.style.cssText = gradient;
 
             for (let next of nextSlide) {
                 for (let prev of prevSlide) {

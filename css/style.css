@@ -232,6 +232,10 @@ header .active {
     background-size: cover;
 }
 
+.mobile-picture {
+    display: none;
+}
+
 /**Gallery*/
 
 .gallery__content h3 {
