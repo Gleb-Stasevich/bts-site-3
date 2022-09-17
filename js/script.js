@@ -26,6 +26,14 @@ const init = {
     /** убираем fixed фон для телефонов/планшетов */
     checkDevice() {
         const mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        if (mobile) {
+            const aboutUs = document.querySelector('.about-us');
+            aboutUs.style.cssText = `background: #45484d;
+            background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
+            background: -webkit-linear-gradient(top, #45484d 0%, #000000 100%);
+            background: linear-gradient(to bottom, #45484d 0%, #000000 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#45484d', endColorstr='#000000', GradientType=0);`
+        }
     },
 
     carouselFlash() {
