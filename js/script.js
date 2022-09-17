@@ -25,35 +25,7 @@ const init = {
 
     /** убираем fixed фон для телефонов/планшетов */
     checkDevice() {
-        const SafariBrowser = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
         const mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        const aboutUs = document.querySelector('.about-us');
-        const features = document.querySelector('.features');
-        const twitter = document.querySelector('.twitter');
-        const contactUs = document.querySelector('.contact-us');
-        const notFixedAboutUs = 'url(\'../img/about-bg.png\') no-repeat';
-        const notFixedFeatures = 'url("../img/features-bg.png") no-repeat';
-        const notFixedTwitter = 'url("../img/twitter-bg.png") no-repeat';
-        const notFixedContactUs = 'url("../img/contact-bg.png") no-repeat';
-
-        if (SafariBrowser || mobile) {
-            aboutUs.style.background = notFixedAboutUs;
-            features.style.background = notFixedFeatures;
-            twitter.style.background = notFixedTwitter;
-            contactUs.style.background = notFixedContactUs;
-
-            for (let next in nextSlide) {
-                for (let prev in prevSlide) {
-                    console.log(nextSlide[prev]);
-                    nextSlide[next].style.display = 'none';
-                    prevSlide[prev].style.display = 'none';
-                }
-            }
-        }
-        aboutUs.style.background = notFixedAboutUs;
-        features.style.background = notFixedFeatures;
-        twitter.style.background = notFixedTwitter;
-        contactUs.style.background = notFixedContactUs;
     },
 
     carouselFlash() {
