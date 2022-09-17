@@ -234,6 +234,7 @@ header .active {
 
 .mobile-picture {
     display: none;
+    z-index: -10;
 }
 
 /**Gallery*/
@@ -576,6 +577,7 @@ picture {
 .contact-us {
     position: relative;
     background: url('../img/contact-bg.png') no-repeat center center fixed;
+    padding-bottom: 0 !important;
 }
 
 input {

@@ -38,11 +38,11 @@ const init = {
             const twitter = document.querySelector('.twitter');
             const contactUs = document.querySelector('.contact-us');
             const mobilePicture = document.querySelector('.mobile-picture');
-            aboutUs.style.background = '';
-            mobilePicture.style.display = '';
-            features.style.cssText = gradient;
-            twitter.style.cssText = gradient;
-            contactUs.style.cssText = gradient;
+            aboutUs.style.background = 'inherit';
+            features.style.background = 'inherit';
+            twitter.style.background = 'inherit';
+            contactUs.style.background = 'inherit';
+            mobilePicture.style.display = 'block';
 
             for (let next of nextSlide) {
                 for (let prev of prevSlide) {
