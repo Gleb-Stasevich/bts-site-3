@@ -38,10 +38,10 @@ const init = {
             const twitter = document.querySelector('.twitter');
             const contactUs = document.querySelector('.contact-us');
 
-            aboutUs.style.cssText = gradient;
+            aboutUs.style.background = 'background: url(\'../img/about-bg.png\')';
             features.style.cssText = gradient;
             twitter.style.cssText = gradient;
-            contactUs.style.cssText = gradient;
+            contactUs.style.background = 'background: url(\'../img/contact-bg.png\')';
 
             for (let next of nextSlide) {
                 for (let prev of prevSlide) {

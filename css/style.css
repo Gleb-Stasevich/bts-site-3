@@ -571,8 +571,7 @@ picture {
 
 .contact-us {
     position: relative;
-    background: url('../img/contact-bg.png') center center fixed;
-    will-change: transform;
+    background: url('../img/contact-bg.png') no-repeat center center fixed;
 }
 
 input {
