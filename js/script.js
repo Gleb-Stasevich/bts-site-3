@@ -49,6 +49,10 @@ const init = {
                 }
             }
         }
+        aboutUs.style.background = notFixedAboutUs;
+        features.style.background = notFixedFeatures;
+        twitter.style.background = notFixedTwitter;
+        contactUs.style.background = notFixedContactUs;
     },
 
     carouselFlash() {
