@@ -27,22 +27,21 @@ const init = {
     checkDevice() {
         const mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
         if (mobile) {
-            const gradient = `background: #45484d;
-            background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
-            background: -webkit-linear-gradient(top, #45484d 0%, #000000 100%);
-            background: linear-gradient(to bottom, #45484d 0%, #000000 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#45484d', endColorstr='#000000', GradientType=0);`
 
             const aboutUs = document.querySelector('.about-us');
             const features = document.querySelector('.features');
             const twitter = document.querySelector('.twitter');
             const contactUs = document.querySelector('.contact-us');
-            const mobilePicture = document.querySelector('.mobile-picture');
+            const mobilePictures = document.querySelectorAll('.mobile-picture');
+
             aboutUs.style.background = 'inherit';
             features.style.background = 'inherit';
             twitter.style.background = 'inherit';
             contactUs.style.background = 'inherit';
-            mobilePicture.style.display = 'block';
+
+            for (let picture of mobilePictures) {
+                picture.style.display = 'block';
+            }
 
             for (let next of nextSlide) {
                 for (let prev of prevSlide) {
