@@ -31,10 +31,10 @@ const init = {
         const features = document.querySelector('.features');
         const twitter = document.querySelector('.twitter');
         const contactUs = document.querySelector('.contact-us');
-        const notFixedAboutUs = 'url("../img/about-bg.png") no-repeat center center';
-        const notFixedFeatures = 'url("../img/features-bg.png") no-repeat center center';
-        const notFixedTwitter = 'url("../img/twitter-bg.png") no-repeat center center';
-        const notFixedContactUs = 'url("../img/contact-bg.png") no-repeat center center';
+        const notFixedAboutUs = 'url("../img/about-bg.png") no-repeat center center scroll';
+        const notFixedFeatures = 'url("../img/features-bg.png") no-repeat center center scroll';
+        const notFixedTwitter = 'url("../img/twitter-bg.png") no-repeat center center scroll';
+        const notFixedContactUs = 'url("../img/contact-bg.png") no-repeat center center scroll';
 
         if (SafariBrowser || mobile) {
             aboutUs.style.background = notFixedAboutUs;
