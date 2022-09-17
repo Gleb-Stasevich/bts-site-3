@@ -175,7 +175,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 99999;
+    z-index: 999999;
 }
 
 .navbar {
@@ -228,7 +228,7 @@ header .active {
 
 .about-us {
     position: relative;
-    background: url('../img/about-bg.png') no-repeat top center fixed;
+    background: url('../img/about-bg.png') center center fixed;
 }
 
 /**Gallery*/
