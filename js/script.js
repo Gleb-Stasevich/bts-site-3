@@ -31,10 +31,10 @@ const init = {
         const features = document.querySelector('.features');
         const twitter = document.querySelector('.twitter');
         const contactUs = document.querySelector('.contact-us');
-        const notFixedAboutUs = 'url("../img/about-bg.png") no-repeat center center scroll';
-        const notFixedFeatures = 'url("../img/features-bg.png") no-repeat center center scroll';
-        const notFixedTwitter = 'url("../img/twitter-bg.png") no-repeat center center scroll';
-        const notFixedContactUs = 'url("../img/contact-bg.png") no-repeat center center scroll';
+        const notFixedAboutUs = 'url(\'../img/about-bg.png\') no-repeat';
+        const notFixedFeatures = 'url("../img/features-bg.png") no-repeat';
+        const notFixedTwitter = 'url("../img/twitter-bg.png") no-repeat';
+        const notFixedContactUs = 'url("../img/contact-bg.png") no-repeat';
 
         if (SafariBrowser || mobile) {
             aboutUs.style.background = notFixedAboutUs;
@@ -44,6 +44,7 @@ const init = {
 
             for (let next in nextSlide) {
                 for (let prev in prevSlide) {
+                    console.log(nextSlide[prev]);
                     nextSlide[next].style.display = 'none';
                     prevSlide[prev].style.display = 'none';
                 }
