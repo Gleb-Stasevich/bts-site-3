@@ -718,7 +718,7 @@ textarea {
 
 @media (max-width:525px) {
     .hello__title {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .zoomed-image {
