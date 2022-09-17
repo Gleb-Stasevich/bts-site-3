@@ -1,0 +1,134 @@
+.blog {
+    padding: 100px 0px 50px 0px !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: none;
+}
+
+.carousel-indicators .active {
+    background: white;
+}
+
+.carousel-indicators {
+    transform: translateX(30px);
+}
+
+.carousel-item::before {
+    opacity: 0.1;
+}
+
+.blog .carousel-control-prev,
+.blog .carousel-control-next {
+    border: none;
+    border-radius: 0;
+    top: 95px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: none;
+    border: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next .icon-angle-down {
+    transform: rotate(-90deg);
+    color: var(--blue);
+    transition: all 0.2s ease;
+}
+
+.carousel-control-prev .icon-angle-down {
+    transform: rotate(90deg);
+    color: var(--blue);
+    transition: all 0.2s ease;
+}
+
+.carousel-control-next:hover .icon-angle-down {
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.carousel-control-prev:hover .icon-angle-down {
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.card-sm-text {
+    font-size: 11px;
+}
+
+.card-line {
+    width: 25px;
+    height: 3px;
+    background: var(--bs-blue);
+    opacity: 1;
+}
+
+.carousel-statisctic {
+    font-size: 12px;
+    left: 10px;
+    bottom: 10px;
+    z-index: 5;
+}
+
+.carousel-statisctic i {
+    font-size: 11px;
+}
+
+.carousel-top-icon {
+    top: 10px;
+    right: 10px;
+    z-index: 5;
+    width: 30px;
+    height: 30px;
+    background: var(--blue);
+    border-radius: 4px;
+}
+
+.carousel-top-icon i {
+    font-size: 14px;
+}
+
+.carousel-repeat i {
+    font-size: 14px;
+}
+
+.carousel-repeat a {
+    width: 340px;
+    height: 50px;
+}
+
+.repeat-text {
+    display: block;
+    color: grey;
+    width: 350px;
+    height: 50px;
+    transition: all 0.5s ease;
+}
+
+.repeat-text:hover {
+    background-color: var(--blue);
+    border-radius: 6px;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+.carousel-repeat:hover {
+    color: white;
+}
+
+.blog .collapse {
+    width: auto;
+}

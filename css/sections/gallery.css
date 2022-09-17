@@ -1,0 +1,45 @@
+.gallery__content h3 {
+    font-size: 18px;
+}
+
+.gallery__block {
+    overflow: hidden;
+}
+
+picture {
+    z-index: -1;
+}
+
+.gallery img {
+    transition: all 0.8s ease;
+    cursor: pointer;
+}
+
+.gallery__content {
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 9999;
+    opacity: 0;
+    transition: all 0.8s ease;
+    transform: translateY(-80%);
+    pointer-events: none;
+}
+
+.gallery .wow:hover .gallery__content {
+    transform: translateY(-100%);
+    opacity: 1;
+    transition: all 0.8s ease;
+    pointer-events: none;
+}
+
+.gallery .wow:hover img {
+    transform: scale(1.4) rotate(-15deg);
+    transition: all 0.8s ease;
+}
+
+.zoomed-image {
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
+}

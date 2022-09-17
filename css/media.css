@@ -1,0 +1,84 @@
+/**убрал гориз. прокрутку (стили у б. элементов на бутстрапе вылезали за ширину экрана)*/
+
+@media (max-width: 1001px) {
+    .gallery .row:nth-child(2) {
+        width: 100%;
+        margin-left: 4px;
+    }
+
+    .team .row:nth-child(2) {
+        width: 100%;
+        margin-left: 4px;
+    }
+
+    .blog .row:nth-child(2) {
+        width: 100%;
+        margin-left: 4px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header__body {
+        padding: 15px;
+    }
+
+    .navbar {
+        height: auto;
+    }
+
+    .nav-link {
+        padding: 5px 0px 0px 0px;
+    }
+
+    .gallery .row:nth-child(2) {
+        width: auto;
+        margin-left: 0px;
+    }
+
+    .team .row:nth-child(2) {
+        width: auto;
+        margin-left: 0px;
+    }
+
+    .blog .row:nth-child(2) {
+        width: auto;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:525px) {
+    .hello__title {
+        font-size: 40px;
+    }
+
+    .zoomed-image {
+        height: 300px;
+    }
+}
+
+@media (max-width:395px) {
+    .blog .card {
+        width: 17rem !important;
+    }
+
+    .carousel-repeat a {
+        width: 320px;
+        height: 50px;
+    }
+
+    .blog .carousel-control-prev,
+    .blog .carousel-control-next {
+        top: 70px;
+    }
+}
+
+@media (max-width: 367px) {
+    .blog .row {
+        --bs-gutter-x: 0rem;
+        --bs-gutter-y: 0rem;
+    }
+
+    .carousel-repeat a {
+        width: 300px;
+    }
+}

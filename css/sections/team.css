@@ -1,0 +1,49 @@
+.team {
+    padding-top: 0px !important;
+}
+
+.card__icon a {
+    background-color: #d9d9d9;
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.card__icon i {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.card-facebook a,
+.card-twitter a,
+.card-linkedin a,
+.card-dribbble a,
+.card-rss a {
+    transition: all 0.5s ease;
+}
+
+.team-block:hover .card-facebook a {
+    background: var(--blue);
+    transition: all 0.5s ease;
+}
+
+.team-block:hover .card-twitter a {
+    background: aqua;
+    transition: all 0.5s ease;
+}
+
+.team-block:hover .card-linkedin a {
+    background: blue;
+    transition: all 0.5s ease;
+}
+
+.team-block:hover .card-dribbble a {
+    background: pink;
+    transition: all 0.5s ease;
+}
+
+.team-block:hover .card-rss a {
+    background: orange;
+    transition: all 0.5s ease;
+}

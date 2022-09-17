@@ -1,0 +1,17 @@
+.features {
+    position: relative;
+    background: url('../../img/features-bg.png') center center fixed;
+}
+
+.features-icon i {
+    font-size: 40px;
+}
+
+.card {
+    border: 1px solid #f2f2f2;
+}
+
+.btn-card {
+    border: 0;
+    border-radius: 0;
+}

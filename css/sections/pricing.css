@@ -1,0 +1,28 @@
+.card-bg,
+.card-title,
+.card-text,
+.card-subtitle {
+    transition: all 0.5s ease;
+}
+
+.card-bg:hover {
+    background: var(--blue);
+    transition: all 0.5s ease;
+}
+
+.card-bg:hover .card-title,
+.card-bg:hover .card-text,
+.card-bg:hover .card-subtitle {
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.card-bg:hover .btn-card {
+    background: white;
+    color: var(--blue);
+    transition: all 0.5s ease;
+}
+
+.btn-card:hover {
+    transform: scale(1.1);
+}

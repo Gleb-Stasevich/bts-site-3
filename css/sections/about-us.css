@@ -1,0 +1,5 @@
+.about-us {
+    position: relative;
+    background: url('../../img/about-bg.png') no-repeat top center fixed;
+    background-size: cover;
+}

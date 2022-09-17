@@ -1,0 +1,22 @@
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+
+.navbar {
+    height: 80px;
+}
+
+.nav-link {
+    padding: 28px 0px 28px 0px;
+}
+
+header .active {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.home {
+    background-color: #089FE0 !important;
+}

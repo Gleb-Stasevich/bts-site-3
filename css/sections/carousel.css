@@ -1,0 +1,89 @@
+.carousel-inner:nth-child(1).flash::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 1s ease;
+    background: white;
+    animation-name: blick;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blick {
+    0% {
+        opacity: 1;
+        z-index: 50;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+.carousel-caption {
+    top: 35%;
+}
+
+.carousel-caption .icon-angle-down {
+    font-size: 24px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    left: 48.5%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 52px;
+    height: 52px;
+    top: 50%;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    border: none;
+    border-radius: 0;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+    transition: all 0.2s ease;
+}
+
+.carousel-control-prev-icon {
+    margin-right: 4px;
+}
+
+
+.carousel-control-next-icon {
+    margin-left: 4px;
+}
+
+.carousel-control-prev {
+    left: 50px;
+}
+
+.carousel-control-next {
+    right: 50px;
+}
+
+.carousel-caption>p {
+    font-size: 18px;
+}
+
+.carousel-item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0.5;
+}

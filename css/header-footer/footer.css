@@ -1,0 +1,55 @@
+.footer-body {
+    background: var(--blue);
+    height: 170px;
+}
+
+.footer-icon i {
+    font-size: 1rem;
+}
+
+.footer-icon a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 4px;
+}
+
+.envelope,
+.twit,
+.dribbble,
+.facebook,
+.linkedin,
+.tumblr {
+    transition: all 0.5s ease;
+}
+
+.envelope:hover {
+    background: yellowgreen;
+    transition: all 0.5s ease;
+}
+
+.twit:hover {
+    background: aqua;
+    transition: all 0.5s ease;
+}
+
+.dribbble:hover {
+    background: pink;
+    transition: all 0.5s ease;
+}
+
+.facebook:hover {
+    background: var(--blue);
+    transition: all 0.5s ease;
+}
+
+.linkedin:hover {
+    background: blue;
+    transition: all 0.5s ease;
+}
+
+.tumblr:hover {
+    background: orange;
+    transition: all 0.5s ease;
+}
